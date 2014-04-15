@@ -12,7 +12,7 @@
             />
         </div>
         <div class="col-sm-2">
-            <button type="submit" class="btn btn-default btn-lg">To the moon!</button>
+            <button type="submit" class="btn btn-default btn-lg">Send me free MAC!</button>
         </div>
     </div>
 </form>
