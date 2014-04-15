@@ -24,7 +24,7 @@ $config = require_once APP_PATH.'includes/config.php';
  */
 $page = get_request_page();
 
-$dogecoin = new jsonRPCClient(
+$machinecoin = new jsonRPCClient(
     sprintf(
         'http://%s:%s@%s:%s/',
         $config['rpc']['name'],
@@ -49,6 +49,6 @@ $db_link =
  */
 return array(
     'page'     => $page,
-    'dogecoin' => $dogecoin,
+    'machinecoin' => $machinecoin,
     'db_link'  => $db_link,
 );

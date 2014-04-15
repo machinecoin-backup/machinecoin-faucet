@@ -8,7 +8,7 @@
                 name="address"
                 class="form-control input-lg"
                 id="inputEmail3"
-                placeholder="Input Ɖogecoin Wallet Address And Get Free Dogecoins"
+                placeholder="Input Machinecoin Wallet Address And Get Free Machinecoins"
             />
         </div>
         <div class="col-sm-2">
@@ -19,25 +19,25 @@
 
 <p class="center">
     <?php if (1 == $status): ?>
-        You gained <?php echo $doge; ?> <strong>DOGE</strong>.
+        You gained <?php echo $mac; ?> <strong>MAC</strong>.
         <br>
-        Please donate us so there will be water in our bowl so we can give you <strong>DOGE</strong>.
+        Please donate us so there will be water in our bowl so we can give you <strong>MAC</strong>.
         <br>
     <?php elseif (2 == $status): ?>
         Sorry but we are out of money T_T.
         <br>
-        Please donate us so there will be water in our bowl so we can give you <strong>DOGE</strong>.
+        Please donate us so there will be water in our bowl so we can give you <strong>MAC</strong>.
         <br>
     <?php elseif (3 == $status): ?>
         Sorry but you were using this faucet today. Please come back tommorrow.
         <br>
-        Please donate us so there will be water in our bowl so we can give you <strong>DOGE</strong>.
+        Please donate us so there will be water in our bowl so we can give you <strong>MAC</strong>.
         <br>
     <?php else: ?>
         This water bowl (aka "<strong>faucet</strong>") is a service
-        that allows you to receive free <strong>DogeCoins</strong> by simply inputing your address.
+        that allows you to receive free <strong>MachineCoins</strong> by simply inputing your address.
         <br>
-        Please donate us so there will be water in our bowl so we can give you <strong>DOGE</strong>.
+        Please donate us so there will be water in our bowl so we can give you <strong>MAC</strong>.
         <br>
     <?php endif; ?>
 

@@ -10,7 +10,7 @@ SET time_zone = "+00:00";
 --
 -- Baza danych: `faucet`
 --
-CREATE DATABASE `faucet` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+CREATE DATABASE `faucet` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE `faucet`;
 
 -- --------------------------------------------------------
@@ -23,10 +23,10 @@ CREATE TABLE IF NOT EXISTS `logs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
   `payout` smallint(6) NOT NULL,
-  `wallet` text COLLATE utf8_polish_ci NOT NULL,
-  `ip` text COLLATE utf8_polish_ci NOT NULL,
+  `wallet` text COLLATE utf8_general_ci NOT NULL,
+  `ip` text COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1623 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci AUTO_INCREMENT=1623 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

@@ -1,20 +1,20 @@
 <?php defined('APP_PATH') OR die('Access denied');
 
 /**
- * Strona wysyłania dogecoinów
+ * Strona wysyłania machinecoinów
  *
  * @param array $app
  */
 function send_action(array $app)
 {
-    $dogecoin = $app['dogecoin'];
+    $machinecoin = $app['machinecoin'];
     $db_link  = $app['db_link'];
 
     /* Just things which are going to database like ip etc. */
     $today = date('y-m-d');
     $ip = $_SERVER['REMOTE_ADDR'];
     $address = $_POST['address'];
-    $amount = $dogecoin->getbalance();
+    $amount = $machinecoin->getbalance();
     $value = rand(1, 10);
 
     if ($amount < 10) {
@@ -48,7 +48,7 @@ function send_action(array $app)
             $status = 3;
             $value = 0;
         } else {
-            $transaction = $dogecoin->sendtoaddress($address, (float) $value);
+            $transaction = $machinecoin->sendtoaddress($address, (float) $value);
 
             $query = sprintf(
                 "INSERT INTO logs VALUES (null, '%s', %s, '%s', '%s')",
@@ -64,5 +64,5 @@ function send_action(array $app)
         }
     }
 
-    header('Location: index.php?status='.$status.'&doge='.$value);
+    header('Location: index.php?status='.$status.'&mac='.$value);
 }

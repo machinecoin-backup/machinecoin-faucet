@@ -19,7 +19,7 @@
         </div>
         <div class="collapse navbar-collapse right">
             <ul class="nav navbar-nav">
-                <li><a href="http://dogecoins.pl/">Back to dogecoins.pl</a></li>
+                <li><a href="http://faucet.machinecoin.org/">Back to faucet.machinecoin.org</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>

@@ -7,13 +7,13 @@
  */
 function index_action(array $app)
 {
-    $dogecoin = $app['dogecoin'];
+    $machinecoin = $app['machinecoin'];
     $db_link  = $app['db_link'];
 
     $status = $_GET['status'];
-    $doge   = $_GET['doge'];
+    $mac   = $_GET['mac'];
 
-    $account_address = $dogecoin->getaccountaddress('dogecoins');
+    $account_address = $machinecoin->getaccountaddress('machinecoins');
 
     $payout_average = get_avarage_payout($db_link);
     $payout_daily = get_daily_payout($db_link);
@@ -23,7 +23,7 @@ function index_action(array $app)
         'content_view' => 'page/index',
         'content_vars' => array(
             'status'          => $status,
-            'doge'            => $doge,
+            'mac'            => $mac,
             'account_address' => $account_address,
             'payout_average'  => $payout_average,
             'payout_daily'    => $payout_daily,
