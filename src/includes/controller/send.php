@@ -15,9 +15,9 @@ function send_action(array $app)
     $ip = $_SERVER['REMOTE_ADDR'];
     $address = $_POST['address'];
     $amount = $machinecoin->getbalance();
-    $value = rand(1, 10);
+    $value = (float) (rand(1, 25)/1000);
 
-    if ($amount < 10) {
+    if ($amount < 1) {
         $status = 2;
     } else {
         /*Uncomment if you want your payout be dependent on amount you have in wallet*/
