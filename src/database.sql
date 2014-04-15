@@ -22,7 +22,7 @@ USE `faucet`;
 CREATE TABLE IF NOT EXISTS `logs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `date` date NOT NULL,
-  `payout` smallint(6) NOT NULL,
+  `payout` decimal(8,8) NOT NULL,
   `wallet` text COLLATE utf8_general_ci NOT NULL,
   `ip` text COLLATE utf8_general_ci NOT NULL,
   PRIMARY KEY (`id`)

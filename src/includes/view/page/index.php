@@ -48,18 +48,18 @@
     <div class="col-sm-4 center">
         Average Payout:
         <br>
-        <strong><?php echo $payout_average; ?></strong>
+        <strong><?php echo sprintf('%.8f',(float) ($payout_average)); ?></strong>
     </div>
 
     <div class="col-sm-4 center">
         Daily Payout:
         <br>
-        <strong><?php echo $payout_daily; ?></strong>
+        <strong><?php echo sprintf('%.8f',(float) ($payout_daily)); ?></strong>
     </div>
 
     <div class="col-sm-4 center">
         Total Payout:
         <br>
-        <strong><?php echo $payout_total; ?></strong>
+        <strong><?php echo sprintf('%.8f',(float) ($payout_total)); ?></strong>
     </div>
 </div>
