@@ -1,19 +1,20 @@
-dogecoins-faucet
+Machinecoin Faucet
 ================
 
-You can see this faucet on http://faucet.dogecoins.pl/
+You can see this faucet on http://faucet.machinecoin.org/
 
-I'm just a newbie so I will appreciate your help with further developing this faucet.
-
-You can donate us: DPJ3BjZoZBY36wq1R5kS7SAV1UaQRLHQV3
+It's a fork of Emkacf's Dogecoin Faucet v1.3.
+https://github.com/Emkacf/dogecoins-faucet
 
 requirements
 ================
-You must have dogecoin daemon compiled on your server - https://github.com/dogecoin/dogecoin
+You must have Machinecoin-Daemon compiled on your server - https://github.com/gitju/machinecoin
 
 changelog
 ================
-v1.3 -  pull requests by MacDada
+v1.4 - Port to Machinecoin
+
+v1.3 - Pull requests by MacDada
 
 v1.1 - Added db file
 
