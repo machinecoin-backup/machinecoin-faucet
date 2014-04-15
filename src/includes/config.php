@@ -3,7 +3,7 @@
 return array(
     'rpc' => array(
         'host' => '127.0.0.1',
-        'port' => '22555',
+        'port' => '40332',
         'name' => '',
         'pass' => '',
     ),
