@@ -8,7 +8,7 @@ https://github.com/Emkacf/dogecoins-faucet
 
 requirements
 ================
-You must have Machinecoin-Daemon compiled on your server - https://github.com/gitju/machinecoin
+You must have Machinecoin-Daemon compiled on your server - https://github.com/machinecoin-project/machinecoin
 
 changelog
 ================
